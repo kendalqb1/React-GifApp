@@ -10,6 +10,7 @@ export const GifExpertApp = () => {
             <h2 className='title'>Gif App Search</h2>
             <AddCategory setCategories={ setCategories }/>
             <hr/>
+            {  categories.length === 0 && <p className='subtitle'>Busque algun GIF</p>}
             <ol>
                 {
                     categories.map(category => (
