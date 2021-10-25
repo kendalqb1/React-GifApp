@@ -3,11 +3,11 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
-    const [categories, setCategories] = useState(['Netflix']);
+    const [categories, setCategories] = useState([]);
 
     return (
-        <>
-            <h2>GifExpertApp</h2>
+        <div className='container'>
+            <h2 className='title'>Gif App Search</h2>
             <AddCategory setCategories={ setCategories }/>
             <hr/>
             <ol>
@@ -20,6 +20,6 @@ export const GifExpertApp = () => {
                     ))
                 }
             </ol>
-        </>
+        </div>
     )
 }
